@@ -14,7 +14,7 @@ twilio serverless:deploy
 - `projectId` - your project ID in GCP, example  'streams-272212';
 - `location` - your API location, example 'europe-west1';
 - `agentId` - your agent ID in DialogFlow, example '9713ece7-ebbb-43be-ad96-4ff6184f15a1';
-- `request` - message to analyse, example 'Hello';
+- `request` - message to analyse, example '{{widgets.gather_1.SpeechResult}}';
 - `languageCode` - language code, example 'en';
 - `sessionId` - you can create your own session key, example '{{trigger.call.CallSid}}';
 - `credsAsset` - file name of your credentials file, without *private* but with `/`, example '/creds.json';
